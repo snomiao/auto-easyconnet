@@ -1,0 +1,10 @@
+.vscode/
+
+# frp
+frpc.ini
+*.log
+cert/
+
+# vpn
+*.zip
+src/vpn/配置.ini
