@@ -21,6 +21,8 @@
 
 启动 `./vpn/EasyAutoConnect.exe`，然后关闭 VPN ，测试VPN自动重启并登录，即可。
 
+如果你只需要一个一直保持连接的 VPN ，那么配置到这里就可以了
+
 ### 第二部分，配置 frp 将 VPN 转为 socks5 代理。
 
 在组件 1 中，复制 [frpc_demo.ini]( ./frpc/frpc_demo.ini) 并改名为 `frpc.ini`
