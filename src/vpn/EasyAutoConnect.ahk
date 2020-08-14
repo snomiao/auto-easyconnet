@@ -74,7 +74,7 @@ Return
 theLoop(){
     ; 心跳
     FormatTime, TimeString, , (yyyyMMdd.HHmmss)
-    Tooltip SIT-VPN-SERVICE - v2020.08.14 - %TimeString%
+    Tooltip EasyAutoConnect - v2020.08.14 - %TimeString%
     
     ; VPN崩掉自动重启
     Process, Exist, SangforCSClient.exe
@@ -86,7 +86,8 @@ theLoop(){
     ;  WinExist("Prompt ahk_class #32770 ahk_exe SangforCSClient.exe") 
     if WinExist("提示信息 ahk_class #32770 ahk_exe SangforCSClient.exe") {
         ControlClick, OK
-        ; ControlClick, Button1
+        ControlClick, 确定
+        ControlClick, Button1
         Return
     }
     
